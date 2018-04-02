@@ -30,16 +30,16 @@ import java.util.ArrayList;
 public class FirebaseRestaurantViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     private static final int MAX_WIDTH = 200;
     private static final int MAX_HEIGHT = 200;
-    public ImageView mRestaurantImageView;
+
     View mView;
     Context mContext;
     FirebaseUser user;
+    public ImageView mRestaurantImageView;
 
     public FirebaseRestaurantViewHolder(View itemView) {
         super(itemView);
         mView = itemView;
         mContext = itemView.getContext();
-        itemView.setOnClickListener(this);
     }
 
     public void bindRestaurant(Restaurant restaurant) {
