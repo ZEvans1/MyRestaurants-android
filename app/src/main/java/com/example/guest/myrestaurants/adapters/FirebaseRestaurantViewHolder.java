@@ -64,34 +64,6 @@ public class FirebaseRestaurantViewHolder extends RecyclerView.ViewHolder implem
         ratingTextView.setText("Rating: " + restaurant.getRating() + "/5");
     }
 
-//    @Override
-//    public void onClick(View view) {
-//        user = FirebaseAuth.getInstance().getCurrentUser();
-//        String uid = user.getUid();
-//        final ArrayList<Restaurant> restaurants = new ArrayList<>();
-//        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_CHILD_RESTAURANTS).child(uid);
-//        ref.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-//                    restaurants.add(snapshot.getValue(Restaurant.class));
-//                }
-//
-//                int itemPosition = getLayoutPosition();
-//
-//                Intent intent = new Intent(mContext, RestaurantDetailActivity.class);
-//                intent.putExtra("position", itemPosition);
-//                intent.putExtra("restaurants", Parcels.wrap(restaurants));
-//
-//                mContext.startActivity(intent);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-//    }
 
     @Override
     public void onItemSelected() {
